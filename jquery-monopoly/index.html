@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Monopoly</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat|PT+Sans:400,700" rel="stylesheet">
+	<script
+	  src="https://code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>	
+	<link rel="stylesheet" href="css/n.css">
+	<link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+	<div class="modal">
+		<div>
+			<h3>Monopoly</h3>
+			<p>Please fill in game options.</p>
+			<div class="inp-row">
+				<label for="players">Number of players</label>
+				<select id="players">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="inp-row">
+				<label for="fields">Number of fields</label>
+				<select id="fields">
+					<option value="16">16</option>
+					<option value="20">20</option>
+					<option value="24">24</option>
+					<option value="28">28</option>
+					<option value="32">32</option>
+					<option value="36">36</option>
+					<option value="40">40</option>
+					<option value="44">44</option>
+				</select>
+			</div>
+			<div class="inp-row">
+				<label for="capital">Start capital</label>
+				<select id="capital">
+					<option value="30">30</option>
+					<option value="60">60</option>
+					<option value="100">100</option>
+					<option selected value="200">200</option>
+					<option value="300">300</option>
+					<option value="600">600</option>
+				</select>
+			</div>
+			<button id="init">START</button>
+		</div>
+	</div>
+	<div class="rest">
+		<div class="wraper"><div id="spile"></div></div>
+		<div class="actions">
+			<div id="players-data">
+			</div>			
+			<div id="joystick">
+				<button disabled>Throw Dices</button>
+			</div>
+			<div id="buy-prompt">
+				<div id="property"></div>
+				<p>The propery <span id="propid"></span> is on sale, do you want to buy this property?</p>
+				<button disabled id="buy">Yes</button>
+				<button disabled id="pass">No</button>
+			</div> 
+			<div class="log">
+				<table>
+					<thead>
+						<tr><th colspan=2>Last mooves</th></tr>
+					</thead>
+				</table>
+				<div>
+					<table id="log">
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="diceplate">
+		
+	</div>
+	<script src="monopoly.js"></script>
+</body>
+</html>

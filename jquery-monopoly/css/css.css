@@ -1,0 +1,322 @@
+body{
+	font-family: 'Lato', sans-serif;
+	color: #333;
+	background:; #f2f2f2;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+html{
+	height: 100%;
+}
+.rest{
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.modal > div{
+	width: 400px;
+    text-align: center;
+    padding: 20px;
+    border: dashed 6px #dadada;
+    border-radius: 5px;
+    background: #fff;
+    color: #565656;
+}
+.modal h3{
+    text-transform: uppercase;
+    text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 42px;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    background: #ed3237;
+    border: solid 4px #fff;
+    box-shadow: 0 0 0 3px #ed3237;
+    border-radius: 6px;
+    margin: 0 0 20px 0;
+}
+.modal button:hover{
+
+    transform: translateY(6px);
+    box-shadow: 0 0 0 0 #000;
+}
+.modal button{
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;	
+	color: #fff;
+    background: #6bb177;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border: 2px dashed #6bb177;
+    border-radius: 15px;
+    box-shadow: 0 6px #46734e;	
+}
+.modal p{
+    margin-top: 0;
+    border-bottom: dotted 1px #ccc;
+    line-height: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.inp-row{
+	margin: 0 0 5px 0;
+}
+.inp-row label{
+	text-align: left;
+	width: 140px;
+	display: inline-block;
+	padding: 5px 10px;
+	line-height: 20px;
+}
+.inp-row select{
+	text-align: right;
+	width: 50px;
+	display: inline-block;
+	padding: 5px 0;
+	height: 30px;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 3px;
+	border: solid 1px #ccc;
+}
+.modal{
+	background: #f2f2f2 url(https://s-media-cache-ak0.pinimg.com/736x/f9/48/4b/f9484bf00f33b530417b62dcfac2f77b.jpg) left bottom no-repeat;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.wraper{
+	width: 70%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 50px;
+	background: url(../img/background.jpg);
+	background-size: cover;
+}
+#spile{
+	width: 100%;
+	height: 100%;
+	border: solid 1px #272927;
+	box-sizing: border-box;
+	position: relative;
+}
+.actions{
+	width: 30%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	right: 0;
+	top: 0;
+    border-left: dashed 6px #dadada;
+}
+
+#spile .field p{
+padding: 5px;
+    border: solid 3px #d4e8cd;
+    background: #fff;
+    box-shadow: 0 0 0 3px #fff;
+    font-size: 12px;
+}    
+#spile .field{
+	box-sizing: border-box;
+	float: left;
+	border: solid 1px #272927;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+#spile .act:first-child{
+	background: url(http://www.swiss-monopoly.ch/images/start_large.png) center center no-repeat;
+	opacity: 1;
+    background-size: contain;
+	overflow: hidden;
+	text-indent: 9000px;
+}
+#spile .act:first-child p{
+	display: none;
+}
+.player.lost{
+	opacity: 0.35;
+}
+.player{
+	margin: -39px;
+    position: absolute;
+    background: #555;
+    border-radius: 50%;
+    width: 54px;
+    height: 54px;
+    border: solid 12px #333;
+    box-shadow: 0 0 10px 0 #000, 0 0 10px 0 #000 inset;
+    font-size: 14px;
+    line-height: 54px;
+    text-align: center;
+    font-weight: bold;
+    background: #fff;
+	-webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;    
+}
+
+#joystick{
+	text-align: center;
+}
+#joystick button{
+	border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 30px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: #fff;
+    background: #6bb177;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border: 2px dashed #6bb177;
+    border-radius: 15px;
+    box-shadow: 0 6px #46734e;
+	font-size: 40px;
+}
+#joystick button:hover{
+    transform: translateY(6px);
+    box-shadow: 0 0 0 0 #000;
+}
+#joystick button:disabled{
+    transform: translateY(6px);
+    box-shadow: 0 0 0 0 #000;
+	opacity: 0.3;
+}    
+
+#buy-prompt p{
+	margin-top: 0;
+}
+#buy{
+	background: #57c35a;
+    border: 0;
+    border-radius: 4px;
+    line-height: 28px;
+    padding: 0 10px;
+    color: #fff;
+	cursor: pointer;
+}
+#pass{
+    background: #cc5d5d;
+    border: 0;
+    border-radius: 4px;
+    line-height: 28px;
+    padding: 0 10px;
+    color: #fff;
+    cursor: pointer;	
+}
+#buy-prompt{
+	display: none;
+    text-align: center;
+    padding: 20px;
+    border-top: dashed 6px #dadada;
+}
+
+.log{
+	position: absolute;
+	height: 50%;
+	bottom: 0;
+	width: 100%;
+}
+.log > div{ 
+	position: absolute;
+	width: 100%;
+	top: 50px;
+	bottom: 0;
+	overflow-y: auto;
+}
+#diceplate{
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	z-index: 3;
+	pointer-events: none;
+	margin: -200px;
+	left: 50%;
+	top: 50%;
+}
+table{
+	width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border-color: grey;
+}
+td:first-child{
+	text-align: center;
+	width: 15%;
+}
+td{
+	border-left: 1px dashed #EBE0E0;
+	border-right: 1px dashed #EBE0E0;
+	border-bottom: 1px dashed #EBE0E0;
+	border-top: 1px dashed #EBE0E0;
+	padding: 15px 10px;
+	line-height: 1.1;	
+}
+th{    
+    text-align: center;
+    background: #272927;
+    color: white;
+    border: 1px solid #272927;
+    padding: 15px 10px;
+}
+tr:nth-child(even){
+	background: #F8F6F6;
+}
+tr:nth-child(odd){
+	background: #F4F0E5;
+}
+#players-data{
+	padding: 20px;
+    border-bottom: dashed 6px #dadada;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#players-data div{
+	border: solid 2px;
+	padding: 10px;
+	margin: 0 5px;
+	color: #333;
+	border-radius: 5px;
+}
